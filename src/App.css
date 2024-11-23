@@ -1,0 +1,197 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7f6;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 14px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: #ffd966;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #ffcc00;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.user-list-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-card.red-border {
+  border: 5px solid red;
+}
+
+.user-card.green-border {
+  border: 5px solid green;
+}
+
+.user-card input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.user-card input:focus {
+  border-color: #ffcc00;
+}
+
+.user-card .other-data {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.todos-container,
+.posts-container {
+  flex: 2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.todo-card {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.post-card {
+  border: 1px solid purple;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.add-user-form,
+.add-todo-form,
+.add-post-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+.add-user-form input,
+.add-todo-form input,
+.add-post-form input,
+.add-post-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-todo-form button,
+.add-user-form button,
+.add-post-form button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.user-card button.update {
+  background-color: #ffd966;
+}
+
+.user-card button.update:hover {
+  background-color: #ffcc00;
+}
+
+.user-card button.delete {
+  background-color: #ff7373;
+}
+
+.user-card button.other {
+  background-color: #e0e0e0;
+}
+.user-card button.delete:hover {
+  background-color: #ff4c4c;
+}
+
+button {
+  background-color: #ffcc00;
+}
