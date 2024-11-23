@@ -31,7 +31,7 @@ UserTaskTrack is a comprehensive web application for managing users, their todos
 ---
 
 ## Tech Stack
-- **Frontend**: React,js, HTML, CSS
+- **Frontend**: React,JavaScript, HTML, CSS
 - **Backend API**: [JSONPlaceholder](https://jsonplaceholder.typicode.com/) (mock data)
 
 ---
